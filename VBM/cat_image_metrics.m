@@ -1,3 +1,21 @@
+% Author: Hitesh Pradhan
+% Date: 15 March 2024
+% More information: github.com/pradhanhitesh
+% 
+% Description: CAT12 "Segmentation" generates QC-files and stores the
+% information in .mat files and also reports in form of .pdf files.
+% However, when working with large sample size, it is not possible to go
+% through all the QC-reports. Therefore, this function utilizes the .mat
+% files generated during "Segmentation" proccess and provides a table
+% consisting of all necessary image statistics. 
+%
+% Usage:
+% 1. path: provide path to the "reports" folder which contains .mat files
+% 2. threshold: provide a numberic threshold (0-100) below which the image
+% will be given a remark of "FAILED QC" and rest will be given a remark of
+% "QC PASSED".
+
+
 function metrics = cat_image_metrics(path,threshold)
 
     % FUNCTION
