@@ -7,7 +7,7 @@ each .bval file. You can create the index.txt only once, assuming all the subjec
 
 Usage:
 ```
-bash CreateIndex_DTIAnalysis.sh /path/to/bval/files
+bash create_indexfile.sh /path/to/bval/files
 ```
 ## preproc_singlesubject.sh
 
