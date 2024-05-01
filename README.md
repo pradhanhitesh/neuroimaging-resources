@@ -9,4 +9,6 @@ Update: 21 April 2024
 2. Will add REHO-based timeseries extraction from fMRI images for CONN toolbox
 
 3. Adding DTI-single subject FSL bash script
+
+4. Added CreatedIndex_DTIAnalysis.sh: Using bash script to create index.txt required in FSL analysis
 ```
