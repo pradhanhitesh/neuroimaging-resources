@@ -63,14 +63,13 @@ Example file directory structure:
         .
         .
         .
-
 ```
 Place the **preproc_singlesubject.sh** and **preproc_sequence.sh** in the main directory where the subject folders are located. Open the terminal in the main directory and run the **preproc_sequence.sh** script
 
 Usage:
 
 ```
-bash preproce_sequence.sh
+bash preproc_sequence.sh
 ```
 
 
