@@ -47,13 +47,13 @@ Example file directory structure:
     preproc_singlesubject.sh
     preporc_sequence.sh
         |SUBJECT_001
-            |T1.NII
+            |T1.nii
             |B.bval
             |B.bvecs
             |index.txt
             |acqparams.txt
         |SUBJECT_002
-            |T1.NII
+            |T1.nii
             |B.bval
             |B.bvecs
             |index.txt
