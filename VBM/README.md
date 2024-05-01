@@ -13,6 +13,8 @@ The **metrics** variable store the results in a table format in MATLAB and also 
 ## spm12_extractlabels.m
 SPM12 "Display Results" option shows all significant clusters and voxels with peak XYZ coordinates in mm. The XYZ coorindates can be saved as .csv file and used to extract the associated label based on atlas available in **./SPM/tpm** folder.
 
+ **IMPORTANT**: The function will recognize the the first three columns as X-Y-Z columns, unless modified in the code. 
+
 Usage:
 ```
 spm12_extractlables(path/to/your/xyz/coordinates/.csv)
