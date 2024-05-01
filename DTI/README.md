@@ -25,7 +25,7 @@ The scipt can be used to perform BET, EDDY and DTIFIT, in that sequence, for a s
 
 (5) acqparams.txt
 
-If the files are not found, the script would not execute and exit with error. You can use **create_indexfile.sh** script to generate index.txt file. Additionally, if you need help extracting the acqparams.txt, please refer to the python notebook for help.
+If the files are not found, the script would not execute and exit with error. You can use **create_indexfile.sh** script to generate index.txt file. Additionally, if you need help extracting the acqparams.txt, please refer to the <a href="https://github.com/pradhanhitesh/neuroimage-plugins/blob/main/DTI/acqparams.ipynb">python notebook</a> for help.
 
 Usage 1: The script runs at default values of -f 0.2 in BET command and -fwhm=0 in EDDY command.
 
