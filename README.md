@@ -8,7 +8,7 @@ Update: 01 May 2024
 
 2. Added DTI: Preprocessing pipeline using FSL commands turned into scripts for ease
 
-3. Added spm12_extractlables: Extract labels associated with XYZmm coordinates from SPM12 "Display Results" section
+3. Added spm12_extractlabels: Extract labels associated with XYZmm coordinates from SPM12 "Display Results" section
 
 3. To add: REHO-based timeseries extraction from fMRI images for CONN toolbox
 ```
