@@ -4,7 +4,7 @@
 main_directory=$(pwd)
 
 # Path to the script
-single_subject="SingleSub_DTI.sh"
+single_subject="preproc_singlesubject.sh"
 single_path=""
 if [ -f "$main_directory/$single_subject" ]; then
 	single_path="$main_directory/$single_subject"
