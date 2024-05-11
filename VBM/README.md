@@ -20,3 +20,8 @@ Usage:
 spm12_extractlables(path/to/your/xyz/coordinates/.csv)
 ```
 The function will extract the labels and save the results to .csv file in the current working directory of the MATLAB.
+
+## spm12_extractROIvolumes.m
+Using SPM12 Results section you can view your significant clusters at specific FWE-corrected p-value and cluster threshold. Now, you can also save the clusters as "Binary Mask" which can be used to extract volume from those significant regions of the brain for all the subjects in your study. 
+
+I would like to thanks <a href="https://scholar.google.com/citations?user=SAqX3r4AAAAJ&hl=en">Gerad R. Ridgway</a> for writing the original function <a href=http://www0.cs.ucl.ac.uk/staff/G.Ridgway/vbm/get_totals.m>get_totals.m</a>. On top of this function, I created a batch-system which is automated to extract from the subjects *mwp1** files (if you use CAT12 Segmentation). Just specify the path to where *mwp1** files are stored and function will generated a table consisting of filename and associated the GM-volume.
