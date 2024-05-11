@@ -4,11 +4,11 @@ Hello! I am a Research Assistant based in Bengaluru, India and working at Center
 Update: 01 May 2024
 
 ```
-1. Added cat12_image_metrics: Using .mat files generated during VBM in CAT12 to generate table of metrics associated with image QC for all subjects
+1. Added spm12_extractROIvolumes: Extract ROI-specific volumes using binary mask
 
-2. Added DTI: Preprocessing pipeline using FSL commands turned into scripts for ease
+2. Added cat12_image_metrics: Using .mat files generated during VBM in CAT12 to generate table of metrics associated with image QC for all subjects
 
-3. Added spm12_extractlabels: Extract labels associated with XYZmm coordinates from SPM12 "Display Results" section
+3. Added DTI: Preprocessing pipeline using FSL commands turned into scripts for ease
 
-3. To add: REHO-based timeseries extraction from fMRI images for CONN toolbox
+4. Added spm12_extractlabels: Extract labels associated with XYZmm coordinates from SPM12 "Display Results" section
 ```
