@@ -13,4 +13,6 @@ Update: 31 May 2024
 3. Added DTI: Preprocessing pipeline using FSL commands turned into scripts for ease
 
 4. Added spm12_extractlabels: Extract labels associated with XYZmm coordinates from SPM12 "Display Results" section
+
+5. Added HIPS-THOMAS: Workflow scripts for sequential and parallel processing
 ```
