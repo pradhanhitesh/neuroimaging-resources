@@ -22,4 +22,4 @@ process_folder() {
 export -f process_folder
 
 # Find all sub-directories and process them in parallel
-find . -mindepth 1 -maxdepth 1 -type d | parallel -j 25 process_folder
+find . -mindepth 1 -maxdepth 1 -type d | parallel -j 10 process_folder
