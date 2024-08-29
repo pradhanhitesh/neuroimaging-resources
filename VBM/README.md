@@ -6,7 +6,7 @@ CAT12 "Segmentation" generates QC-reports which are very helpful in assessing if
 Usage:
 
 ```
-metrics = cat12_image_metrics(path/to/cat12/reports, threshold = 75)
+metrics = cat12_image_metrics(path/to/cat12/reports, 75)
 ```
 The **metrics** variable store the results in a table format in MATLAB and also saves the table as .csv file in the current working directory of MATLAB.
 

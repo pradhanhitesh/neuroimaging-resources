@@ -15,8 +15,7 @@
 % will be given a remark of "FAILED QC" and rest will be given a remark of
 % "QC PASSED".
 
-
-function metrics = cat_image_metrics(path,threshold)
+function metrics = cat12_image_metrics(path,threshold)
 
     % FUNCTION
     % List all .mat files in the reports folder
@@ -41,14 +40,7 @@ function metrics = cat_image_metrics(path,threshold)
         defect_area = mat.S.qualityratings.SurfaceDefectArea;
         defect_number = mat.S.qualityratings.SurfaceDefectNumber;
         euler_number = mat.S.qualityratings.SurfaceEulerNumber;
-    
-        % Assigns 'QC FAILED' based on threshold
-        if weighted_average < threshold
-            data{k,7} = 'QC FAILED';
-        else
-            continue
-        end
-    
+        
         %Store data
         data{k,1} = sub_id{2};
         data{k,2} = weighted_average;
@@ -56,6 +48,13 @@ function metrics = cat_image_metrics(path,threshold)
         data{k,4} = defect_area;
         data{k,5} = defect_number;
         data{k,6} = euler_number;
+
+        % Assigns 'QC FAILED' based on threshold
+        if weighted_average < threshold
+            data{k,7} = 'QC FAILED';
+        else
+            data{k,7} = 'QC PASSED';
+        end
     end
     
     % Generate table from cell array
