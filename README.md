@@ -1,7 +1,7 @@
 ﻿# Neuroimage Plugins
-Hello! I am a Research Assistant based in Bengaluru, India and working at Center for Brain Research, IISc on indentifying protective and risk factors associated with dementia. The repository contains necessary small plugins which can be used with popular neuroimaging softwares, such as <a href='https://neuro-jena.github.io/cat/'>Computational Anatomy Toolbox (CAT12)</a>. 
+Hello! I am a Research Assistant based in Bengaluru, India and working at Center for Brain Research, IISc on indentifying protective and risk factors associated with dementia. The repository contains necessary small plugins which can be used with popular neuroimaging softwares, such as <a href='https://neuro-jena.github.io/cat/'>Computational Anatomy Toolbox (CAT12)</a>, <a href='https://github.com/CompImg/LST-AI'>Lesion Segmentation Toolbox AI (LST-AI)</a>, and <a href='https://github.com/thalamicseg/hipsthomasdocker'>HIPS-THOMAS</a>.
 
-Update: 22 June 2024
+Update: 29 June 2024
 
 ```
 0. WILL BE ADDED: DTI parallel processing
