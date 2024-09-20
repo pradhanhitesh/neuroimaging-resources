@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyde Replica</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <script src="../static/script.js"></script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
+    <script>hljs.highlightAll();</script>
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/darcula.min.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <!-- Static Sidebar -->
+        <div class="sidebar">
+            <h1>Neuroimaging Resources</h1>
+            <p>A collection of important tutorials in neuroimaing analysis.</p>
+            <div id="menu">`
+                <script>
+                    $(function () {
+                        $('#filename').load("menu.html");
+                    });
+                </script>
+            </div>
+            <footer>
+                <p>Currently v2.1.0</p>
+                <p>© 2015. All rights reserved.</p>
+            </footer>
+        </div>
+
+        <!-- Scrollable Content -->
+        <div class="content">
+            <h2>Voxel-based Morphometry - Introduction</h2>
+            <hr class="light-separator">
+            <p>
+                Voxel-based morphometry (VBM) is a neuroimaging technique that investigates focal differences in brain
+                anatomy. The core
+                process of VBM is segmenting the brain into grey matter, white matter, and cerebrospinal fluid, warping
+                the segmented
+                images to a template space and smoothing. Thereafter, statistical analysis is performed on the basis of
+                the general
+                linear model. Some resources to explore for better understanding:
+            </p>
+            <p>
+            <ul>
+                <li>Resource 1: Subscribe to <a href="https://www.fil.ion.ucl.ac.uk/spm/support/" , target="_blank">SPM
+                        MAIL</a> which is an
+                    electronic mailing list for discussion and help with the methodology, implementation and use of
+                    Statistical Parametric Mapping and the SPM package. I have got to learn a lot from these mails, and
+                    sometimes read mails from early 2000s to find my answers!</li>
+                <li>Resource 2: Watch the YouTube <a href="https://youtu.be/lfUPuDNpUJ4?si=ukpZOndlz-Uq-lTK" ,
+                        target="_blank">video</a> on VBM from the makers of SPM12. A crash-course on VBM Fundamentals.
+                </li>
+            </ul>
+
+            In this tutorial, we will be covering the procedure of conductin VBM using CAT12 and SPM12. For this
+            tutorial,
+            you need to download <a href="https://neuro-jena.github.io/cat/" , target="_blank">CAT12 toolbox</a>.
+            Now, I will provide a brief overview of all the steps involved:
+            </p>
+            <p>
+            <ul>
+                <li>
+                    Using CAT12 graphical interface (GUI), we will <b>SEGMENTATION</b>
+                </li>
+            </ul>
+            </p>
+
+            <div class="nav-buttons">
+                <a href="vbm-preproc.html" class="next-btn">Next Page</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
