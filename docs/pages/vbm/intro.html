@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuroimaging Resources</title>
-    <link rel="stylesheet" href="../static/style.css">
-    <script src="../static/script.js"></script>
+    <link rel="stylesheet" href="../../static/style.css">
+    <script src="../../static/script.js"></script>
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/styles/default.min.css">
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.6.0/highlight.min.js"></script>
     <script>hljs.highlightAll();</script>
@@ -58,7 +58,6 @@
                         target="_blank">video</a> on VBM from the makers of SPM12. A crash-course on VBM Fundamentals.
                 </li>
             </ul>
-
             In this tutorial, we will be covering the procedure of conductin VBM using CAT12 and SPM12. For this
             tutorial,
             you need to download <a href="https://neuro-jena.github.io/cat/" , target="_blank">CAT12 toolbox</a>.
@@ -67,9 +66,35 @@
             <p>
             <ul>
                 <li>
-                    Using CAT12 graphical interface (GUI), we will <b>SEGMENTATION</b>
+                    Using CAT12 graphical interface (GUI), we will implement the default <b>SEGMENT</b> pipeline 
+                    to segment the raw T1 images into GM and WM maps.
+                </li>                
+                <li>
+                    We will <b>exclude subjects</b> with poor Image Quality Rating (IQR) using CAT12 QC Reports. 
+                    This step is very important to remove outliers which can influence your results. 
+                </li>
+                <li>
+                    We will use the SPM12 <b>SMOOTH</b> function to smooth our GM maps (i.e., mwp1* - files starting 
+                    with this prefix are segmented GM images).
+                </li>
+                <li>
+                    We will build full-factorial model using <b>BASIC MODELS</b> function of CAT12. This step is very
+                    important as we define our model, contrasts, covariates (e.g., Age, Gender, TIV).
+                </li>
+                <li>
+                    We will use <b>ESTIMATE</b> function of SPM12 to estimate the SPM.mat, which is your design file.
+                </li>
+                <li>
+                    Now, we are all set to view our results. We only need to define cluster-forming and peak-level
+                    thresholds to correct for multiple comparisons.
+                </li>
+                <li>
+                    We will are going to use <a href="https://www.alivelearn.net/xjview/", target="_blank">xjview</a>
+                    and <a href="https://www.nitrc.org/projects/surfice/", target="_blank">Surf Ice</a> to visualise our results.
                 </li>
             </ul>
+            As you can see, we have used multiple softwares in our VBM workflow, it is very important to keep your files and
+            directory structured. 
             </p>
 
             <div class="nav-buttons">
