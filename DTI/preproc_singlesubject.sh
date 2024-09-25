@@ -41,16 +41,22 @@ if $all_files_exist; then
     nii_filename=$(ls *.nii)
     nii_basename=$(basename "$nii_filename" .nii)
 
-    # Run bet
+    # Execute bet
     bet "$nii_filename" "$nii_filename" -m -f "$bet_f"
 
     # Wait before running eddy
     wait
-    # Execute your second command here
-    eddy --imain="$nii_filename" --mask="${nii_basename}_mask.nii.gz" --index=index.txt --acqp=acqparams.txt --bvecs="${nii_basename}.bvec" --bvals="${nii_basename}.bval" --fwhm="$eddy_fwhm" --out=eddy_"$nii_basename"
+    # Execute eddy
+    eddy --imain="$nii_filename" --mask="${nii_basename}_mask.nii.gz" --index=index.txt --acqp=acqparams.txt --bvecs="${nii_basename}.bvec" --bvals="${nii_basename}.bval"  --out=eddy_"$nii_basename" --fwhm="$eddy_fwhm" --cnr_maps --repol
 
+    # Wait before running eddy quad
+    wait
+    # Execute eddy_quad
+    eddy_quad eddy_"$nii_basename" -idx index.txt -par acqparams.txt -m "${nii_basename}_mask.nii.gz" -b "${nii_basename}.bval" 
+    
     # Wait before running dtifit
     wait
+    # Execute dtifit
     dtifit --data="eddy_${nii_basename}.nii.gz" --out=dti --mask="${nii_basename}_mask.nii.gz" --bvecs="${nii_basename}.bvec" --bvals="${nii_basename}.bval"
 else
     echo "Error: One or more required files are missing."
