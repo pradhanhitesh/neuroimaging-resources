@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import xml.etree.ElementTree as ET
 import pandas as pd
 
-def extract_from_xml(files: list, atlas: str, tpm: str):
+def cat12_extract_xml(files: list, atlas: str, tpm: str):
     '''
     Extracts data from a list of XML files based on a specified atlas and TPM (Tissue Probability Map) type. 
     The function processes each XML file, extracts relevant volumetric data for gray matter (Vgm), white matter (Vwm), 

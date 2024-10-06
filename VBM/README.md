@@ -65,3 +65,15 @@ atlas_rules = {
     "aparc_DK40" : ['thickness']
 }
 ```
+
+Usage:
+
+```
+data = cat12_extract_xml(files = [list_of_all_xml_filepaths],
+                        atlas = 'cobra',
+                        tpm = 'Vgm')
+
+# Allowed atlases: ['cobra', 'hammers', 'lpba40', 'neuromorphometrics', 'suit', 'thalamic_nuclei', 'thalamus', 'aparc_2009s', 'aparc_DK40']
+
+# Check the atlases_rules dictionary above to see the allowed TPM for any given atlas
+```
